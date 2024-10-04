@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: "Inter";
+  /* overflow-y: hidden; */
+}
+header {
+  /* min-height: 100vh; */
+  background: #043873;
+}
+nav {
+  min-height: 7vh;
+  max-width: 1540px;
+}
+.logo {
+  min-height: 70%;
+}
+.nav-link {
+  color: white;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.nav-link:focus,
+.nav-link:active {
+  color: white !important;
+}
+.nav-link:hover {
+  color: #a1a6a9;
+}
+.nav-item.dropdown:hover .down-arr-img {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.custom-nav-list .nav-link {
+  font-size: 0.9rem;
+}
+
+.navbar-brand {
+  margin-right: 3rem;
+}
+.btn1,
+.btn2 {
+  white-space: nowrap;
+  text-align: center;
+  border: none;
+
+  font-size: 0.9rem;
+}
+.btn1 {
+  min-width: 7vw;
+  padding: 0.3rem 1rem;
+  background-color: #ffe492;
+  color: #043873;
+}
+.btn1:hover {
+  background-color: #e1c477;
+}
+.btn2 {
+  min-width: 10vw;
+  padding: 0.4rem 2rem;
+  background-color: #4f9cf9;
+}
+.btn2:hover {
+  background-color: #3a7cb0;
+}
+.custom-nav-list .nav-link {
+  font-size: 0.9rem;
+}
+.navbar-brand {
+  margin-right: 3rem;
+}
+.btn1,
+.btn2 {
+  font-size: 0.9rem;
+}
+@media (min-width: 1440px) {
+  nav {
+    /* padding: 0% 50%; */
+  }
+}
