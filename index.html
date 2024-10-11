@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Navbar</title>
+    <title>Whitepace</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,74 +11,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
-    <header class="d-flex justify-content-center align-items-start">
-      <nav class="navbar navbar-expand-lg bg-transparent w-100">
-        <div class="container-fluid">
-          <!-- Left side logo (visible in all screen sizes) -->
-          <a class="navbar-brand ms-xxl-5" href="#">
-            <img src="./assets/Logo.svg" alt="Logo" />
-          </a>
+    <!-- header -->
+    <header class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/Logo.svg" alt="Logo" />
+              </a>
 
-          <!-- Toggle button (menubar) for screens sm and below -->
-          <button
-            class="navbar-toggler d-sm-inline-block d-lg-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Offcanvas content for small screens (hidden on xl and above) -->
-          <div
-            class="offcanvas offcanvas-end d-md-none"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
               <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav gap-4">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Dropdown 1</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Dropdown 2</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Dropdown 3</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Dropdown 4</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Centered content and buttons for md and larger -->
-          <div class="collapse navbar-collapse justify-content-between">
-            <!-- Menubar and buttons visible in md (row alignment) -->
-            <div class="d-xxl-none d-md-flex ms-auto align-items-center gap-2">
-              <button class="btn btn-primary btn1" type="button">Login</button>
-              <button class="btn btn-secondary btn2" type="button">
-                Try Whitepace free
-              </button>
-
-              <!-- Menubar visible in md to xl -->
-              <button
-                class="navbar-toggler d-md-inline-block d-xxl-none"
+                class="navbar-toggler d-sm-inline-block d-lg-none"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar"
@@ -86,206 +32,281 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-            </div>
 
-            <!-- Full navbar with dropdowns visible from xl and above -->
-            <div class="d-none d-xxl-flex justify-content-end w-100 gap-4">
-              <ul class="navbar-nav gap-4 custom-nav-list">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Products
-                    <img
-                      src="./assets/Down Arrow.svg"
-                      class="down-arr-img"
-                      width="30px"
-                      alt=""
-                    />
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+              <div
+                class="offcanvas offcanvas-end d-md-none"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Menu
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav gap-4">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dropdown 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dropdown 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dropdown 3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dropdown 4</a>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Solutions
-                    <img
-                      src="./assets/Down Arrow.svg"
-                      class="down-arr-img"
-                      width="30px"
-                      alt=""
-                    />
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Resources
-                    <img
-                      src="./assets/Down Arrow.svg"
-                      class="down-arr-img"
-                      width="30px"
-                      alt=""
-                    />
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Pricing
-                    <img
-                      src="./assets/Down Arrow.svg"
-                      class="down-arr-img"
-                      width="30px"
-                      alt=""
-                    />
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </div>
 
-            <!-- Buttons for xl screens only (aligned right) -->
-            <div class="d-none d-xxl-flex gap-2 ms-auto">
-              <button class="btn btn-primary btn1" type="button">Login</button>
-              <button class="btn btn-secondary btn2 me-xxl-4" type="button">
-                Try Whitepace free
-                <img src="./assets/right-arrow.svg" width="35px" alt="" />
-              </button>
-            </div>
+              <div class="collapse navbar-collapse justify-content-between">
+                <div
+                  class="d-xxl-none d-md-flex ms-auto align-items-center gap-2"
+                >
+                  <button class="btn btn-primary btn1" type="button">
+                    Login
+                  </button>
+                  <button class="btn btn-secondary btn2" type="button">
+                    Try Whitepace free
+                  </button>
+                  <button
+                    class="navbar-toggler d-md-inline-block d-xxl-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+
+                <div class="d-none d-xxl-flex justify-content-end w-100 gap-4">
+                  <ul class="navbar-nav gap-4 custom-nav-list">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Products
+                        <img
+                          src="./assets/Down Arrow.svg"
+                          class="down-arr-img"
+                          width="30px"
+                          alt=""
+                        />
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Solutions
+                        <img
+                          src="./assets/Down Arrow.svg"
+                          class="down-arr-img"
+                          width="30px"
+                          alt=""
+                        />
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Resources
+                        <img
+                          src="./assets/Down Arrow.svg"
+                          class="down-arr-img"
+                          width="30px"
+                          alt=""
+                        />
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Pricing
+                        <img
+                          src="./assets/Down Arrow.svg"
+                          class="down-arr-img"
+                          width="30px"
+                          alt=""
+                        />
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="d-none d-xxl-flex gap-2 ms-auto">
+                  <button class="btn btn-primary btn1" type="button">
+                    Login
+                  </button>
+                  <button class="btn btn-secondary btn2" type="button">
+                    Try Whitepace free
+                    <img src="./assets/right-arrow.svg" width="35" alt="" />
+                  </button>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <!-- landing page content -->
+    <!-- page-1 -->
     <main
-      class="d-flex align-items-center page1-main min-vh-100 position-relative overflow-hidden"
+      class="page1-main position-relative overflow-hidden d-flex align-items-center justify-content-start"
     >
       <img
         src="./assets/bg-landing-img.svg"
-        class="bg-landing-img position-absolute w-100 h-100 object-fit-cover"
+        class="bg-landing-img position-absolute w-100 h-100"
+        style="z-index: 0"
         alt=""
       />
       <div
-        class="landing-text d-flex flex-column flex-lg-row align-items-center justify-content-around mx-4 px-3 w-100 gap-0 gap-lg-3"
+        class="container h-100 d-flex align-items-center justify-content-center"
+        style="z-index: 1"
       >
-        <div
-          class="left-main d-flex flex-column justify-content-start align-items-center align-items-lg-start"
-        >
-          <h1 class="text-white heading-left-main fw-bold text-center">
-            Get More Done with whitepace
-          </h1>
-          <p class="text-white subheading-left-main text-center">
-            Project management software that enables your teams to collaborate,
-            plan, analyze and manage everyday tasks
-          </p>
-          <button
-            class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
-            type="button"
+        <div class="row h-100 justify-content-center">
+          <div
+            class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 d-flex flex-column align-items-start justify-content-center"
           >
-            Try Whitepace free
+            <h2 class="text-white heading-left-main">
+              Get More Done with whitepace
+            </h2>
+            <p class="text-white fw-lighter subheading-left-main">
+              Project management software that enables your teams to
+              collaborate, plan, analyze and manage everyday tasks
+            </p>
+            <button
+              class="btn btn-secondary btn2 mt-5 d-inline-flex align-items-center"
+              type="button"
+            >
+              Try Whitepace free
+              <img
+                src="./assets/right-arrow.svg"
+                width="35"
+                alt=""
+                class="ms-2"
+              />
+            </button>
+          </div>
+          <div class="col-lg-6">
             <img
-              src="./assets/right-arrow.svg"
-              width="35px"
+              src="./assets/Image-container.png"
+              class="img-fluid border border-0 rounded-2"
+              style="z-index: 1"
               alt=""
-              class="ms-2"
             />
-          </button>
-        </div>
-        <div class="right-main mt-4 mt-lg-0">
-          <img
-            src="./assets/main-cake.jpg"
-            class="w-100 border rounded-2"
-            alt=""
-          />
+          </div>
         </div>
       </div>
     </main>
 
     <!-- page-2 -->
     <main
-      class="page2-main d-flex align-items-center position-relative min-vh-100"
+      class="page2-main position-relative overflow-hidden d-flex align-items-center"
+      style="min-height: 80vh"
     >
       <img
         src="./assets/bg-page2.svg"
-        class="bg-landing-img position-absolute top-0 opacity-25 object-fit-cover"
+        class="bg-landing-img position-absolute object-fit-cover opacity-25"
+        style="z-index: 0"
         alt=""
       />
       <div
-        class="landing-text d-flex flex-column flex-lg-row align-items-center justify-content-around mx-4 px-3 w-100 gap-3"
+        class="container w-100 h-100 d-flex align-items-center justify-content-center my-5"
       >
         <div
-          class="left-main d-flex flex-column justify-content-center align-items-lg-start"
+          class="page2-content row w-100 h-100 justify-content-center align-items-center"
         >
-          <h1
-            class="text-black text-center text-lg-start heading-left-main-2 fw-bold position-relative"
+          <!-- Left Side: Text Content -->
+          <div
+            class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0"
+            style="z-index: 1"
           >
-            Project Management
-          </h1>
-          <p
-            class="text-black subheading-left-main-2 text-center text-lg-start w-100"
-          >
-            Images, videos, PDFs and audio files are supported. Create math
-            expressions and diagrams directly from the app. Take photos with the
-            mobile app and save them to a note.
-          </p>
-          <button
-            class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
-            type="button"
-          >
-            Get Started
+            <h2
+              class="text-black heading-left-main-2 fw-bold position-relative"
+            >
+              Project Management
+            </h2>
+            <p class="text-black subheading-left-main-2">
+              Images, videos, PDFs, and audio files are supported. Create math
+              expressions and diagrams directly from the app. Take photos with
+              the mobile app and save them to a note.
+            </p>
+            <button
+              class="btn btn-secondary btn2 mt-5 d-inline-flex align-items-center"
+              type="button"
+            >
+              Get Started
+              <img
+                src="./assets/right-arrow.svg"
+                width="35"
+                alt="Arrow"
+                class="ms-2"
+              />
+            </button>
+          </div>
+
+          <!-- Right Side: Image -->
+          <div class="col-lg-6">
             <img
-              src="./assets/right-arrow.svg"
-              width="35px"
-              alt=""
-              class="ms-2"
+              src="./assets/Image-container.png"
+              class="img-fluid border border-0 rounded-2"
+              style="z-index: 1"
+              alt="Project Management Visual"
             />
-          </button>
-        </div>
-        <div class="right-main-page2 mt-4 mt-lg-0">
-          <img src="./assets/main-cake.jpg" class="w-100" alt="" />
+          </div>
         </div>
       </div>
     </main>
@@ -294,43 +315,49 @@
     <main
       class="page2-main d-flex align-items-center position-relative min-vh-100"
     >
-      <div
-        class="landing-text d-flex flex-column flex-lg-row-reverse align-items-center justify-content-around mx-4 px-3 mb-4 w-100 gap-5"
-      >
+      <div class="container">
         <div
-          class="left-main d-flex flex-column justify-content-center align-items-center align-items-lg-start"
+          class="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between mx-4 px-3 gap-5 flex-lg-nowrap"
         >
-          <h1
-            class="text-black text-center heading-left-main-3 fw-bold position-relative"
-          >
-            Work together
-          </h1>
-          <p
-            class="text-black text-center text-lg-start .subheading-left-main-3"
-          >
-            With whitepace, share your notes with your colleagues and
-            collaborate on them. You can also publish a note to the internet and
-            share the URL with others.
-          </p>
-          <button
-            class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
-            type="button"
-          >
-            Try it now
+          <!-- Right Side: Image -->
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center">
             <img
-              src="./assets/right-arrow.svg"
-              width="35px"
-              alt=""
-              class="ms-2"
+              src="./assets/page3-img.svg"
+              class="img-fluid"
+              alt="Work together illustration"
             />
-          </button>
-        </div>
-        <div class="right-main-page2 mt-4 mt-lg-0 text-center text-lg-start">
-          <img
-            src="./assets/page3-img.svg"
-            class="img-fluid w-100 w-lg-70"
-            alt="Work together illustration"
-          />
+          </div>
+
+          <!-- Left Side: Text Content -->
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start"
+          >
+            <h1
+              class="text-black text-center text-lg-start heading-left-main-3 fw-bold position-relative"
+            >
+              Work together
+            </h1>
+            <p
+              class="text-black text-center text-lg-start subheading-left-main-3"
+              style="font-size: 18px"
+            >
+              With whitepace, share your notes with your colleagues and
+              collaborate on them. You can also publish a note to the internet
+              and share the URL with others.
+            </p>
+            <button
+              class="btn btn-secondary btn2 mt-5 d-inline-flex justify-content-center align-items-center"
+              type="button"
+            >
+              Try it now
+              <img
+                src="./assets/right-arrow.svg"
+                width="35px"
+                alt=""
+                class="ms-2"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -338,43 +365,44 @@
     <!-- page-4 -->
     <main
       class="page2-main page4 d-flex align-items-center position-relative min-vh-100"
+      style="background-color: #043873"
     >
-      <div
-        class="landing-text d-flex flex-column flex-lg-row align-items-center justify-content-around mx-4 px-3 w-100 gap-5"
-      >
-        <div
-          class="left-main d-flex flex-column justify-content-center align-items-center align-items-lg-start"
-        >
-          <h1
-            class="text-white text-center text-lg-start heading-left-main-4 fw-bold position-relative"
+      <div class="container">
+        <div class="row justify-content-center align-items-center my-5">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start"
           >
-            Use as Extension
-          </h1>
-          <p
-            class="text-white subheading-left-main-4 text-center text-lg-start"
-          >
-            Use the web clipper extension, available on Chrome and Firefox, to
-            save web pages or take screenshots as notes.
-          </p>
-          <button
-            class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
-            type="button"
-          >
-            Let's Go
+            <h1
+              class="text-white text-center text-lg-start heading-left-main-4 fw-bold position-relative"
+            >
+              Use as Extension
+            </h1>
+            <p
+              class="text-white subheading-left-main-4 text-center text-lg-start"
+            >
+              Use the web clipper extension, available on Chrome and Firefox, to
+              save web pages or take screenshots as notes.
+            </p>
+            <button
+              class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
+              type="button"
+            >
+              Let's Go
+              <img
+                src="./assets/right-arrow.svg"
+                width="35px"
+                alt=""
+                class="ms-2"
+              />
+            </button>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0 text-center text-lg-start">
             <img
-              src="./assets/right-arrow.svg"
-              width="35px"
-              alt=""
-              class="ms-2"
+              src="./assets/Image-container.png"
+              class="img-fluid w-100 w-lg-70"
+              alt="Work together illustration"
             />
-          </button>
-        </div>
-        <div class="right-main-page2 mt-4 mt-lg-0 text-center text-lg-start">
-          <img
-            src="./assets/main-cake.jpg"
-            class="img-fluid w-100 w-lg-70"
-            alt="Work together illustration"
-          />
+          </div>
         </div>
       </div>
     </main>
@@ -383,179 +411,197 @@
     <main
       class="page2-main d-flex align-items-center position-relative min-vh-100"
     >
-      <div
-        class="landing-text d-flex flex-column-reverse flex-lg-row-reverse align-items-center justify-content-around mx-4 px-3 w-100 gap-5"
-      >
-        <div
-          class="left-main d-flex flex-column justify-content-center align-items-center align-items-lg-start mt-4 mt-lg-0"
-        >
-          <h1
-            class="text-black text-center text-lg-start heading-left-main-5 fw-bold position-relative"
+      <div class="container">
+        <div class="row justify-content-center align-items-center my-5">
+          <div
+            class="col-lg-6 order-lg-2 d-flex flex-column justify-content-center align-items-center align-items-lg-start"
           >
-            Customise it to your needs
-          </h1>
-          <p
-            class="text-black text-center text-lg-start subheading-left-main-5"
-          >
-            Customise the app with plugins, custom themes and multiple text
-            editors (Rich Text or Markdown). Or create your own scripts and
-            plugins using the Extension API.
-          </p>
-          <button
-            class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
-            type="button"
-          >
-            Let's Go
+            <h1
+              class="text-black text-center text-lg-start heading-left-main-5 fw-bold position-relative"
+            >
+              Customise it to your needs
+            </h1>
+            <p
+              class="text-black text-center text-lg-start subheading-left-main-5"
+            >
+              Customise the app with plugins, custom themes, and multiple text
+              editors (Rich Text or Markdown). Or create your own scripts and
+              plugins using the Extension API.
+            </p>
+            <button
+              class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
+              type="button"
+            >
+              Let's Go
+              <img
+                src="./assets/right-arrow.svg"
+                width="35px"
+                alt=""
+                class="ms-2"
+              />
+            </button>
+          </div>
+          <div class="col-lg-6 order-lg-1 my-4 mb-lg-0 text-center">
             <img
-              src="./assets/right-arrow.svg"
-              width="35px"
-              alt=""
-              class="ms-2"
+              src="./assets/Image-container.png"
+              class="img-fluid w-100"
+              alt="Customization illustration"
             />
-          </button>
-        </div>
-        <div class="right-main-page2 mb-4 mb-lg-0">
-          <img
-            src="./assets/main-cake.jpg"
-            class="img-fluid w-100"
-            alt="Customization illustration"
-          />
+          </div>
         </div>
       </div>
     </main>
 
     <!-- plan-page -->
     <main class="plan-page d-flex flex-column align-items-center">
-      <div
-        class="d-flex flex-column justify-content-center align-items-center mt-5 text-center"
-      >
-        <h1
-          class="text-black heading-top-plan-page fw-bold text-center position-relative w-100 mb-4"
-        >
-          Choose Your Plan
-        </h1>
-        <p class="text-black mb-5 px-5 subheading-plan text-center">
-          Whether you want to get organized, keep your personal life on track,
-          or boost workplace productivity, Evernote has the right plan for you.
-        </p>
-      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mt-5 text-center"
+            >
+              <h1
+                class="text-black heading-top-plan-page fw-bold text-center position-relative w-100 mb-4"
+              >
+                Choose Your Plan
+              </h1>
+              <p class="text-black mb-5 px-lg-5 subheading-plan text-center">
+                Whether you want to get organized, keep your personal life on
+                track, or boost workplace productivity, Evernote has the right
+                plan for you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-plan-page">
+          <div class="container">
+            <div class="row justify-content-center card-container">
+              <!-- Card 1 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow short">
+                  <div class="card-body">
+                    <h5 class="card-title h3 mb-4">Free</h5>
+                    <p class="card-text price h4 mb-4">$0</p>
+                    <p class="card-text mb-4">
+                      Capture ideas and find them quickly
+                    </p>
+                    <div class="card-features mb-4">
+                      <ul class="list-unstyled px-4 lh-lg">
+                        <li class="mb-2">
+                          <i class="bi bi-check2-circle"></i> Sync unlimited
+                          devices
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2-circle"></i> 10 GB monthly
+                          uploads
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2-circle"></i> 200 MB max. note
+                          size
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2-circle"></i> Customize Home
+                          dashboard and access extra widgets
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2-circle"></i> Connect primary
+                          Google Calendar account
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2-circle"></i> Add due dates,
+                          reminders, and notifications to your tasks
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn w-50 p-3 plan-btn">Get Started</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="bottom-plan-page">
-        <div class="container">
-          <div class="row justify-content-center card-container">
-            <!-- Card 1 -->
-            <div class="col-md-4 mb-4">
-              <div class="card shadow short">
-                <div class="card-body">
-                  <h5 class="card-title h3 mb-4">Free</h5>
-                  <p class="card-text price h4 mb-4">$0</p>
-                  <p class="card-text mb-4">
-                    Capture ideas and find them quickly
-                  </p>
-                  <div class="card-features mb-4">
-                    <ul class="list-unstyled px-4 lh-lg">
-                      <li class="mb-2">
-                        <i class="bi bi-check2-circle"></i>Sync unlimited
-                        devices
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2-circle"></i>10 GB monthly uploads
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2-circle"></i>200 MB max. note size
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2-circle"></i>Customize Home
-                        dashboard and access extra widgets
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2-circle"></i>Connect primary
-                        Google Calendar account
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2-circle"></i>Add due dates,
-                        reminders, and notifications to your tasks
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="btn-wrapper">
-                    <a href="#" class="btn w-50 p-3 plan-btn">Get Started</a>
+              <!-- Card 2 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <h5 class="card-title h3 mb-4">Personal</h5>
+                    <p class="card-text price h4 mb-4">$11.99</p>
+                    <p class="card-text mb-4">Keep home and family on track</p>
+                    <div class="card-features mb-4">
+                      <ul class="list-unstyled px-4 lh-lg">
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Sync unlimited
+                          devices
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> 10 GB monthly
+                          uploads
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> 200 MB max. note
+                          size
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Customize Home
+                          dashboard and access extra widgets
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Connect primary
+                          Google Calendar account
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Add due dates,
+                          reminders, and notifications to your tasks
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn w-50 p-3 plan-btn">Get Started</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-4 mb-4">
-              <div class="card shadow">
-                <div class="card-body">
-                  <h5 class="card-title h3 mb-4">Personal</h5>
-                  <p class="card-text price h4 mb-4">$11.99</p>
-                  <p class="card-text mb-4">Keep home and family on track</p>
-                  <div class="card-features mb-4">
-                    <ul class="list-unstyled px-4 lh-lg">
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Sync unlimited devices
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>10 GB monthly uploads
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>200 MB max. note size
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Customize Home
-                        dashboard and access extra widgets
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Connect primary Google
-                        Calendar account
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Add due dates,
-                        reminders, and notifications to your tasks
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="btn-wrapper">
-                    <a href="#" class="btn w-50 p-3 plan-btn">Get Started</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-4 mb-4">
-              <div class="card shadow short">
-                <div class="card-body">
-                  <h5 class="card-title h3 mb-4">Organization</h5>
-                  <p class="card-text price h4 mb-4">$49.99</p>
-                  <p class="card-text mb-4">Collaborate and manage projects</p>
-                  <div class="card-features mb-4">
-                    <ul class="list-unstyled px-4 lh-lg">
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Sync unlimited devices
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>10 GB monthly uploads
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>200 MB max. note size
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Customize Home
-                        dashboard and access extra widgets
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Connect primary Google
-                        Calendar account
-                      </li>
-                      <li class="mb-2">
-                        <i class="bi bi-check2 me-2"></i>Add due dates,
-                        reminders, and notifications to your tasks
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="btn-wrapper">
-                    <a href="#" class="btn w-50 p-3 plan-btn">Get Started</a>
+
+              <!-- Card 3 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow short">
+                  <div class="card-body">
+                    <h5 class="card-title h3 mb-4">Organization</h5>
+                    <p class="card-text price h4 mb-4">$49.99</p>
+                    <p class="card-text mb-4">
+                      Collaborate and manage projects
+                    </p>
+                    <div class="card-features mb-4">
+                      <ul class="list-unstyled px-4 lh-lg">
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Sync unlimited
+                          devices
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> 10 GB monthly
+                          uploads
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> 200 MB max. note
+                          size
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Customize Home
+                          dashboard and access extra widgets
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Connect primary
+                          Google Calendar account
+                        </li>
+                        <li class="mb-2">
+                          <i class="bi bi-check2 me-2"></i> Add due dates,
+                          reminders, and notifications to your tasks
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn w-50 p-3 plan-btn">Get Started</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -572,59 +618,73 @@
         class="bg-work position-absolute"
         alt=""
       />
-      <div
-        class="d-flex flex-column justify-content-center align-items-center mt-5 text-center"
-      >
-        <h1
-          class="text-white heading-top-work-page ps-4 fw-bold text-start position-relative mb-4"
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center mt-5 text-center"
         >
-          Your work, everywhere you are
-        </h1>
-        <p
-          class="text-white subheading-top-work-page mb-5 px-5 text-start text-lg-center"
-        >
-          Access your notes from your computer, phone or tablet by synchronising
-          with various services, including whitepace, Dropbox and OneDrive. The
-          app is available on Windows, macOS, Linux, Android and iOS. A terminal
-          app is also available!
-        </p>
-        <button
-          class="btn btn-secondary btn2 mt-5 mb-3 text-center d-flex justify-content-center align-items-center"
-          type="button"
-        >
-          Try Taskey <img src="./assets/right-arrow.svg" width="35px" alt="" />
-        </button>
+          <h1
+            class="text-white heading-top-work-page ps-4 fw-bold text-start position-relative mb-4"
+          >
+            Your work, everywhere you are
+          </h1>
+          <p
+            class="text-white subheading-top-work-page mb-5 px-5 text-start text-lg-center"
+          >
+            Access your notes from your computer, phone or tablet by
+            synchronizing with various services, including Whitepace, Dropbox,
+            and OneDrive. The app is available on Windows, macOS, Linux,
+            Android, and iOS. A terminal app is also available!
+          </p>
+          <button
+            style="cursor: pointer"
+            class="btn btn-secondary btn2 mt-5 mb-3 text-center d-flex justify-content-center align-items-center"
+            type="button"
+          >
+            Try Taskey
+            <img src="./assets/right-arrow.svg" width="35px" alt="" />
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- your data page -->
     <main class="d-flex align-items-center your-data">
-      <div
-        class="landing-text d-flex flex-column-reverse flex-lg-row align-items-center justify-content-around mx-4 px-3 w-100 gap-3"
-      >
+      <div class="container">
         <div
-          class="left-main d-flex flex-column justify-content-center align-items-center align-items-lg-start position-relative"
+          class="d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center mx-4 my-5 px-3"
         >
-          <h1
-            class="text-black text-center text-lg-start heading-your-data fw-bold"
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start mb-4 mb-lg-0"
           >
-            100% your data
-          </h1>
-          <p class="text-black text-center text-lg-start subheading-your-data">
-            The app is open source and your notes are saved to an open format,
-            so you'll always have access to them. Uses End-To-End Encryption
-            (E2EE) to secure your notes and ensure no-one but yourself can
-            access them.
-          </p>
-          <button
-            class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
-            type="button"
-          >
-            Read more <img src="./assets/right-arrow.svg" width="35px" alt="" />
-          </button>
-        </div>
-        <div class="right-main">
-          <img src="./assets/your-data-img.svg" class="w-100" alt="" />
+            <h1
+              class="text-black text-center text-lg-start heading-your-data fw-bold mb-3"
+            >
+              100% Your Data
+            </h1>
+            <p
+              class="text-black text-center text-lg-start subheading-your-data mb-4"
+            >
+              The app is open source and your notes are saved to an open format,
+              so you'll always have access to them. Uses End-To-End Encryption
+              (E2EE) to secure your notes and ensure no one but yourself can
+              access them.
+            </p>
+            <button
+              class="btn btn-secondary btn2 mt-4 text-center d-flex justify-content-center align-items-center"
+              type="button"
+            >
+              Read more
+              <img src="./assets/right-arrow.svg" width="35px" alt="" />
+            </button>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img
+              src="./assets/your-data-img.svg"
+              class="img-fluid w-100"
+              alt="Your Data Illustration"
+            />
+            <!-- Adjust image size -->
+          </div>
         </div>
       </div>
     </main>
@@ -633,436 +693,433 @@
     <div
       class="sponsor-page d-flex flex-column align-items-center position-relative gap-5"
     >
-      <div
-        class="d-flex justify-content-center align-items-center mt-5 text-center position-relative"
-      >
-        <h1 class="text-black sponsors-heading fw-bold text-center mb-4">
-          Our Sponsors
-        </h1>
+      <div class="text-center mt-5 position-relative">
+        <h1 class="text-black sponsors-heading fw-bold mb-4">Our Sponsors</h1>
       </div>
-      <div class="icons d-flex flex-column flex-lg-row justify-content-around">
-        <img src="./assets/Apple.svg" class="w-50 mx-5" alt="" />
-        <img src="./assets/microsoft.svg" class="mx-5" alt="" />
-        <img src="./assets/Slack.svg" class="mx-5" alt="" />
-        <img src="./assets/Google.svg" class="mx-5" alt="" />
+      <div
+        class="icons d-flex flex-column flex-lg-row justify-content-center align-items-center"
+      >
+        <img
+          src="./assets/Apple.svg"
+          class="img-fluid w-25 mx-3 mb-3 mb-lg-0"
+          style="width: 150px"
+          alt="Apple"
+        />
+        <img
+          src="./assets/microsoft.svg"
+          class="img-fluid mx-3 mb-3 mb-lg-0"
+          style="width: 150px"
+          alt="Microsoft"
+        />
+        <img
+          src="./assets/Slack.svg"
+          class="img-fluid mx-3 mb-3 mb-lg-0"
+          style="width: 150px"
+          alt="Slack"
+        />
+        <img
+          src="./assets/Google.svg"
+          class="img-fluid mx-3 mb-3 mb-lg-0"
+          style="width: 150px"
+          alt="Google"
+        />
       </div>
     </div>
 
     <!-- Fav apps -->
-    <main class="page1-main w-100 overflow-x-hidden">
-      <img
-        src="./assets/bg-landing-img.svg"
-        class="bg-landing-img position-absolute w-100 h-100 object-fit-cover"
-        alt=""
-      />
-      <div class="ms-auto me-auto">
-        <div
-          class="row flex-column-reverse flex-md-row-reverse align-items-center"
-        >
-          <div class="col-12 col-md-6 mt-4 mt-md-0">
-            <div class="left-main text-center text-md-start">
-              <h1 class="text-white heading-left-main fw-bold">
-                Work with Your Favorite Apps Using whitepace
-              </h1>
-              <p class="text-white">
-                Whitepace teams up with your favorite software. Integrate with
-                over 1000+ apps with Zapier to have all the tools you need for
-                your project success.
-              </p>
-              <button
-                class="btn btn-secondary btn2 mt-3 d-inline-flex align-items-center"
-                type="button"
-              >
-                Read more
+    <section>
+      <main class="page1-main w-100 overflow-x-hidden my-5">
+        <img
+          src="./assets/bg-landing-img.svg"
+          class="bg-landing-img position-absolute w-100 h-100 object-fit-cover"
+          style="z-index: 0"
+          alt=""
+        />
+        <div class="container h-100 content-wrapper">
+          <div
+            class="row flex-column-reverse flex-md-row-reverse align-items-center h-100"
+            style="min-height: 100vh"
+          >
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+              <div class="left-main text-center text-md-start">
+                <h1 class="text-white heading-left-main fw-bold">
+                  Work with Your Favorite Apps Using whitepace
+                </h1>
+                <p class="text-white">
+                  Whitepace teams up with your favorite software. Integrate with
+                  over 1000+ apps with Zapier to have all the tools you need for
+                  your project success.
+                </p>
+                <div class="">
+                  <button
+                    class="btn btn-secondary btn2 mt-3 d-inline-flex align-items-center"
+                    type="button"
+                    style="cursor: pointer"
+                  >
+                    Read more
+                    <img
+                      src="./assets/right-arrow.svg"
+                      width="35"
+                      alt="Right arrow"
+                      class="ms-2"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 img-app">
+              <div class="right-main text-center">
                 <img
-                  src="./assets/right-arrow.svg"
-                  width="35"
-                  alt="Right arrow"
-                  class="ms-2"
+                  src="./assets/Apps.svg"
+                  class="img-fluid w-75 mt-3"
+                  alt="Apps illustration"
                 />
-              </button>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 img-app">
-            <div class="right-main text-center">
-              <img
-                src="./assets/Apps.svg"
-                class="img-fluid w-75 mt-3"
-                alt="Apps illustration"
-              />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <!-- reviews page -->
-    <div class="review position-relative">
-      <div
-        class="d-flex flex-column flex-lg-row justify-content-center align-items-center mt-5 text-center position-relative"
-      >
-        <h1 class="text-black review-heading fw-bold text-center mb-4">
-          What Our Clients Says
-        </h1>
-      </div>
-      <div
-        class="reviews d-flex flex-column flex-lg-row justify-content-around gap-5 px-5 mt-5"
-      >
-        <!-- card1 -->
-        <div
-          class="card2 d-flex flex-column py-5 justify-content-between align-items-center"
-        >
-          <div class="w-100 p-3 ms-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="128"
-              height="128"
-              fill="currentColor"
-              class="bi bi-quote q-img"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
-              />
-            </svg>
-          </div>
-          <div
-            class="d-flex flex-column justify-content-between align-items-center h-75"
-          >
-            <div class="card2-text p-3 mx-4">
-              Whitepate is designed as a collaboration tool for businesses that
-              is a full project management solution.
-            </div>
-            <hr class="w-75 mb-5" />
-            <div
-              class="profile d-flex flex-column flex-lg-row align-items-start justify-content-between gap-4 p-3"
-            >
-              <img
-                src="./assets/main-cake.jpg"
-                width="80px"
-                height="80px"
-                class="rounded-circle object-fit-cover"
-                alt=""
-              />
-              <div class="">
-                <div class="p-heading fs-4 fw-bold">Oberon Shaw, MCH</div>
-                <div class="p-subheading">
-                  Head of Talent Acquisition, North America
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card-2 -->
-        <div
-          class="card2 d-flex flex-column py-5 justify-content-between align-items-center"
-        >
-          <div class="w-100 p-3 ms-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="128"
-              height="128"
-              fill="currentColor"
-              class="bi bi-quote q-img"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
-              />
-            </svg>
-          </div>
-          <div
-            class="d-flex flex-column justify-content-between align-items-center h-75"
-          >
-            <div class="card2-text p-3 mx-4">
-              Whitepate is designed as a collaboration tool for businesses that
-              is a full project management solution.
-            </div>
-            <hr class="w-75 mb-5" />
-            <div
-              class="profile d-flex align-items-center justify-content-between gap-4 p-3"
-            >
-              <img
-                src="./assets/main-cake.jpg"
-                width="80px"
-                height="80px"
-                class="rounded-circle object-fit-cover"
-                alt=""
-              />
-              <div class="">
-                <div class="p-heading fs-4 fw-bold">Oberon Shaw, MCH</div>
-                <div class="p-subheading">
-                  Head of Talent Acquisition, North America
-                </div>
-              </div>
-            </div>
+      <div class="container" style="overflow-x: hidden">
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 text-center">
+            <h1 class="text-black review-heading fw-bold mb-4">
+              What Our Clients Say
+            </h1>
           </div>
         </div>
 
-        <!-- card-3 -->
-        <div
-          class="card2 d-flex flex-column py-5 justify-content-between align-items-center"
-        >
-          <div class="w-100 p-3 ms-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="128"
-              height="128"
-              fill="currentColor"
-              class="bi bi-quote q-img"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
-              />
-            </svg>
-          </div>
-          <div
-            class="d-flex flex-column justify-content-between align-items-center h-75"
-          >
-            <div class="card2-text p-3 mx-4">
-              Whitepate is designed as a collaboration tool for businesses that
-              is a full project management solution.
+        <div class="row justify-content-around mt-5">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card2 d-flex flex-column py-5 h-100">
+              <div class="w-100 p-3 ms-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="128"
+                  height="128"
+                  fill="currentColor"
+                  class="bi bi-quote q-img"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex-grow-1 d-flex flex-column justify-content-between"
+              >
+                <div class="card2-text p-3 mx-4">
+                  Whitepate is designed as a collaboration tool for businesses
+                  that is a full project management solution.
+                </div>
+                <hr class="w-75 mx-auto mb-5" />
+                <div class="profile d-flex align-items-center p-3">
+                  <img
+                    src="./assets/main-cake.jpg"
+                    width="80"
+                    height="80"
+                    class="rounded-circle object-fit-cover me-4"
+                    alt=""
+                  />
+                  <div>
+                    <div class="p-heading fs-4 fw-bold">Oberon Shaw, MCH</div>
+                    <div class="p-subheading">
+                      Head of Talent Acquisition, North America
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <hr class="w-75 mb-5" />
-            <div
-              class="profile d-flex align-items-center justify-content-between gap-4 p-3"
-            >
-              <img
-                src="./assets/main-cake.jpg"
-                width="80px"
-                height="80px"
-                class="rounded-circle object-fit-cover"
-                alt=""
-              />
-              <div class="">
-                <div class="p-heading fs-4 fw-bold">Oberon Shaw, MCH</div>
-                <div class="p-subheading">
-                  Head of Talent Acquisition, North America
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card2 d-flex flex-column py-5 h-100">
+              <div class="w-100 p-3 ms-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="128"
+                  height="128"
+                  fill="currentColor"
+                  class="bi bi-quote q-img"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex-grow-1 d-flex flex-column justify-content-between"
+              >
+                <div class="card2-text p-3 mx-4">
+                  Whitepate is designed as a collaboration tool for businesses
+                  that is a full project management solution.
+                </div>
+                <hr class="w-75 mx-auto mb-5" />
+                <div class="profile d-flex align-items-center p-3">
+                  <img
+                    src="./assets/main-cake.jpg"
+                    width="80"
+                    height="80"
+                    class="rounded-circle object-fit-cover me-4"
+                    alt=""
+                  />
+                  <div>
+                    <div class="p-heading fs-4 fw-bold">Oberon Shaw, MCH</div>
+                    <div class="p-subheading">
+                      Head of Talent Acquisition, North America
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card2 d-flex flex-column py-5 h-100">
+              <div class="w-100 p-3 ms-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="128"
+                  height="128"
+                  fill="currentColor"
+                  class="bi bi-quote q-img"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex-grow-1 d-flex flex-column justify-content-between"
+              >
+                <div class="card2-text p-3 mx-4">
+                  Whitepate is designed as a collaboration tool for businesses
+                  that is a full project management solution.
+                </div>
+                <hr class="w-75 mx-auto mb-5" />
+                <div
+                  class="profile d-flex flex-column flex-lg-row align-items-start align-items-lg-center p-3 gap-3 justify-content-start"
+                >
+                  <img
+                    src="./assets/main-cake.jpg"
+                    width="80"
+                    height="80"
+                    class="rounded-circle object-fit-cover me-4"
+                    alt=""
+                  />
+                  <div>
+                    <div class="p-heading fs-4 fw-bold">Oberon Shaw, MCH</div>
+                    <div class="p-subheading">
+                      Head of Talent Acquisition, North America
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row justify-content-center my-4">
+          <div class="col-12 d-flex justify-content-center gap-3">
+            <div class="dot1 p-2 border rounded-circle"></div>
+            <div class="dot2 p-2 border rounded-circle"></div>
+            <div class="dot3 p-2 border rounded-circle"></div>
+          </div>
+        </div>
       </div>
-      <div class="d-flex justify-content-center gap-3 mt-3">
-        <div class="dot1 p-2 border rounded-circle"></div>
-        <div class="dot2 p-2 border rounded-circle"></div>
-        <div class="dot3 p-2 border rounded-circle"></div>
-      </div>
-    </div>
+    </section>
 
     <!-- footer page -->
-    <footer>
-      <div
-        class="top-footer d-flex flex-column align-items-center justify-content-center mb-5"
-      >
-        <div
-          class="left-main d-flex flex-column justify-content-center align-items-center mt-5"
-        >
-          <h1 class="text-white heading-left-main fw-bold text-center m-4 mt-5">
-            Try Whitepace today
-          </h1>
-          <p class="text-white text-center fw-light">
-            Get started for free. <br />
-            Add your whole team as your needs grow.
-          </p>
-          <button
-            class="btn btn-secondary btn2 mt-5 text-center d-flex justify-content-center align-items-center"
-            type="button"
-          >
-            Try Taskey free
-            <img src="./assets/right-arrow.svg" width="35px" alt="" />
-          </button>
-          <p class="text-white text-center fw-light my-3">
-            On a big team? Contact sales
-          </p>
-          <div class="logos d-flex gap-4">
-            <img
-              src="./assets/Wapple.svg"
-              width="40px"
-              style="cursor: pointer"
-              alt=""
-            />
-            <img
-              src="./assets/Wmicrosoft.svg"
-              width="40px"
-              style="cursor: pointer"
-              alt=""
-            />
-            <img
-              src="./assets/Wandroid.svg"
-              width="40px"
-              style="cursor: pointer"
-              alt=""
-            />
+    <footer class="text-white">
+      <div class="container">
+        <!-- Top Footer Section -->
+        <div class="row justify-content-center text-center mb-5 py-5">
+          <div class="col-md-8 col-lg-6">
+            <h1 class="fw-bold mb-4">Try Whitepace today</h1>
+            <p class="fw-light mb-4">
+              Get started for free.<br />
+              Add your whole team as your needs grow.
+            </p>
+            <button
+              class="btn btn-secondary btn2 mb-3 d-inline-flex align-items-center"
+              type="button"
+            >
+              Try Taskey free
+              <img
+                src="./assets/right-arrow.svg"
+                width="35"
+                alt=""
+                class="ms-2"
+              />
+            </button>
+            <p class="fw-light mb-4">
+              On a big team? <a href="#" class="text-white-50">Contact sales</a>
+            </p>
+            <div class="d-flex justify-content-center gap-4">
+              <img
+                src="./assets/Wapple.svg"
+                width="40"
+                alt="Apple"
+                style="cursor: pointer"
+              />
+              <img
+                src="./assets/Wmicrosoft.svg"
+                width="40"
+                alt="Microsoft"
+                style="cursor: pointer"
+              />
+              <img
+                src="./assets/Wandroid.svg"
+                width="40"
+                alt="Android"
+                style="cursor: pointer"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div class="bottom-footer mt-5">
-        <footer class="text-white pt-5">
-          <div class="container">
-            <div class="row d-flex justify-content-center gap-4 gap-lg-0">
-              <!-- Left Column -->
-              <div class="col-md-3 text-center text-lg-start">
-                <img
-                  src="./assets/Logo.svg"
-                  alt="Whitespace Logo"
-                  class="mb-3"
-                />
-                <p>
-                  Whitespace was created for the new ways we live and work. We
-                  make a better workspace around the world.
-                </p>
-              </div>
-              <!-- First Column: Product -->
-              <div
-                class="col-md-2 d-flex d-lg-block flex-column align-items-center justify-content-center"
-              >
-                <h5>Product</h5>
-                <ul class="list-unstyled">
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Overview</a>
-                  </li>
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Pricing</a>
-                  </li>
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Customer stories</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Second Column: Resources -->
-              <div
-                class="col-md-2 d-flex d-lg-block flex-column align-items-center justify-content-center"
-              >
-                <h5>Resources</h5>
-                <ul class="list-unstyled">
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Blog</a>
-                  </li>
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Guides & tutorials</a>
-                  </li>
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Help center</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Third Column: Company -->
-              <div
-                class="col-md-2 d-flex d-lg-block flex-column align-items-center justify-content-center"
-              >
-                <h5>Company</h5>
-                <ul class="list-unstyled">
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">About us</a>
-                  </li>
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Careers</a>
-                  </li>
-                  <li class="text-center text-lg-start">
-                    <a href="#" class="">Media kit</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Call to Action -->
-              <div
-                class="col-md-3 text-md-end d-flex flex-column align-items-start"
-              >
-                <h5>Try It Today</h5>
-                <p class="text-start">
-                  Get started for free. Add your whole team as your needs grow.
-                </p>
-                <button
-                  class="btn btn-secondary btn2 rounded-2 mt-5 text-center d-flex justify-content-center align-items-center"
-                  type="button"
-                >
-                  Try Whitepace free
-                  <img src="./assets/right-arrow.svg" width="35px" alt="" />
-                </button>
-              </div>
-            </div>
-            <hr class="my-5" />
-            <!-- Bottom Footer -->
-            <div class="row mt-4">
-              <div class="col-md-8">
-                <ul
-                  class="list-inline d-flex flex-column flex-lg-row align-items-center justify-content-between"
-                >
-                  <li class="dropdown list-inline-item">
-                    <a
-                      class="nav-link"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <img src="./assets/world.svg" alt="" />
-                      English
-                      <img
-                        src="./assets/Down Arrow.svg"
-                        class="down-arr-img"
-                        width="30px"
-                        alt=""
-                      />
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                    </ul>
-                  </li>
 
-                  <li class="list-inline-item">
-                    <a href="#" class="text-white">Terms & privacy</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="text-white">Security</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="text-white">Status</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="text-white">©2021 Whitepace LLC.</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-4 text-md-end d-flex justify-content-center">
-                <ul class="list-inline d-flex justify-content-end gap-4">
-                  <li class="list-inline-item">
-                    <a href="#"
-                      ><img
-                        src="./assets/facbook.svg"
-                        alt="Facebook"
-                        class="img-social"
-                    /></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"
-                      ><img
-                        src="./assets/twitter.svg"
-                        alt="Twitter"
-                        class="img-social"
-                    /></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"
-                      ><img
-                        src="./assets/linkedin.svg"
-                        alt="LinkedIn"
-                        class="img-social"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <!-- Main Footer Content -->
+        <div class="row justify-content-between gy-5">
+          <!-- Company Info -->
+          <div class="col-md-6 col-lg-3 text-center text-md-start">
+            <a href="#"
+              ><img src="./assets/Logo.svg" alt="Whitespace Logo" class="mb-3"
+            /></a>
+            <p>
+              Whitespace was created for the new ways we live and work. We make
+              a better workspace around the world.
+            </p>
           </div>
-        </footer>
+
+          <!-- Product Links -->
+          <div class="col-md-4 col-lg-2">
+            <h5 class="text-center text-md-start mb-3">Product</h5>
+            <ul class="list-unstyled text-center text-md-start">
+              <li><a href="#" class="text-decoration-none">Overview</a></li>
+              <li><a href="#" class="text-decoration-none">Pricing</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Customer stories</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources Links -->
+          <div class="col-md-4 col-lg-2">
+            <h5 class="text-center text-md-start mb-3">Resources</h5>
+            <ul class="list-unstyled text-center text-md-start">
+              <li><a href="#" class="text-decoration-none">Blog</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Guides & tutorials</a>
+              </li>
+              <li><a href="#" class="text-decoration-none">Help center</a></li>
+            </ul>
+          </div>
+
+          <!-- Company Links -->
+          <div class="col-md-4 col-lg-2">
+            <h5 class="text-center text-md-start mb-3">Company</h5>
+            <ul class="list-unstyled text-center text-md-start">
+              <li><a href="#" class="text-decoration-none">About us</a></li>
+              <li><a href="#" class="text-decoration-none">Careers</a></li>
+              <li><a href="#" class="text-decoration-none">Media kit</a></li>
+            </ul>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="col-md-6 col-lg-3 text-center text-md-start">
+            <h5 class="mb-3">Try It Today</h5>
+            <p>Get started for free. Add your whole team as your needs grow.</p>
+            <button
+              class="btn btn-secondary btn2 d-inline-flex align-items-center mt-3"
+              type="button"
+            >
+              Try Whitepace free
+              <img
+                src="./assets/right-arrow.svg"
+                width="35"
+                alt=""
+                class="ms-2"
+              />
+            </button>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center pb-5">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <ul
+              class="list-inline d-flex flex-column flex-lg-row align-items-center justify-content-between mb-0"
+            >
+              <li class="list-inline-item mb-2 mb-lg-0">
+                <div class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./assets/world.svg" alt="Language" class="me-1" />
+                    English
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Español</a></li>
+                    <li><a class="dropdown-item" href="#">Français</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list-inline-item mb-2 mb-lg-0">
+                <a href="#" class="text-decoration-none">Terms & privacy</a>
+              </li>
+              <li class="list-inline-item mb-2 mb-lg-0">
+                <a href="#" class="text-decoration-none">Security</a>
+              </li>
+              <li class="list-inline-item mb-2 mb-lg-0">
+                <a href="#" class="text-decoration-none">Status</a>
+              </li>
+              <li class="list-inline-item">©2021 Whitepace LLC.</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul
+              class="list-inline d-flex justify-content-center justify-content-lg-end mb-0"
+            >
+              <li class="list-inline-item me-3">
+                <a href="#"
+                  ><img
+                    src="./assets/facbook.svg"
+                    alt="Facebook"
+                    class="img-social"
+                /></a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a href="#"
+                  ><img
+                    src="./assets/twitter.svg"
+                    alt="Twitter"
+                    class="img-social"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="./assets/linkedin.svg"
+                    alt="LinkedIn"
+                    class="img-social"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 
