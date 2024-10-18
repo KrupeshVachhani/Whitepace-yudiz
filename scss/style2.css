@@ -1,0 +1,315 @@
+.btn1 {
+  background-color: #FFE492;
+  color: #08478e;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn1:hover {
+  background-color: rgb(217.7007874016, 176.8818897638, 12.6992125984);
+  border-color: #e1c477;
+}
+.btn1:hover {
+  border: none;
+}
+
+.btn2 {
+  background-color: #4F9CF9;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn2:hover {
+  background-color: rgba(8, 71, 142, 0.8901960784);
+  border-color: #e1c477;
+}
+.btn2 img {
+  margin-left: 0.5rem;
+}
+
+.page2-main {
+  min-height: 100vh;
+  position: relative;
+  background-color: #fff;
+}
+.page2-main .heading-left-main-5 {
+  font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  .page2-main .heading-left-main-5 {
+    font-size: 2.5rem;
+  }
+}
+.page2-main .subheading-left-main-5 {
+  font-size: 1.75rem;
+  color: #08478e;
+}
+@media (min-width: 768px) {
+  .page2-main .subheading-left-main-5 {
+    font-size: 1.2rem;
+  }
+}
+
+.plan-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.plan-page .heading-top-plan-page {
+  font-size: 1.75rem;
+  color: #08478e;
+}
+@media (min-width: 768px) {
+  .plan-page .heading-top-plan-page {
+    font-size: 2.5rem;
+  }
+}
+.plan-page .subheading-plan {
+  font-size: 1.75rem;
+  color: #08478e;
+  margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .plan-page .subheading-plan {
+    font-size: 1.2rem;
+  }
+}
+.plan-page .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.plan-page .card-container .card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+}
+.plan-page .card-container .card:hover {
+  background: #08478e;
+}
+.plan-page .card-container .card .card-features ul li {
+  margin-bottom: 0.5rem;
+}
+.plan-page .card-container .card .card-features ul li i {
+  color: #6c757d;
+}
+.plan-page .card-container .card .plan-btn {
+  background-color: #4F9CF9;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.plan-page .card-container .card .plan-btn:hover {
+  background-color: rgba(8, 71, 142, 0.8901960784);
+  border-color: #e1c477;
+}
+
+.work-page {
+  position: relative;
+  padding-top: 2rem;
+  background-color: #08478e;
+}
+.work-page .heading-top-work-page {
+  font-size: 1.75rem;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .work-page .heading-top-work-page {
+    font-size: 2.5rem;
+  }
+}
+.work-page .subheading-top-work-page {
+  font-size: 1.75rem;
+  color: #fff;
+  padding: 0 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .work-page .subheading-top-work-page {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  .work-page .subheading-top-work-page {
+    text-align: start;
+  }
+}
+
+.your-data {
+  padding: 2rem 0;
+}
+.your-data .heading-your-data {
+  font-size: 1.75rem;
+  color: #08478e;
+}
+@media (min-width: 768px) {
+  .your-data .heading-your-data {
+    font-size: 2.5rem;
+  }
+}
+.your-data .subheading-your-data {
+  font-size: 1.75rem;
+  color: #08478e;
+  margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .your-data .subheading-your-data {
+    font-size: 1.2rem;
+  }
+}
+.your-data .btn2 {
+  background-color: #4F9CF9;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.your-data .btn2:hover {
+  background-color: rgba(8, 71, 142, 0.8901960784);
+  border-color: #e1c477;
+}
+.your-data .btn2 img {
+  margin-left: 0.5rem;
+}
+
+.sponsor-page {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+.sponsor-page .sponsors-heading {
+  font-size: 1.75rem;
+  color: #08478e;
+}
+@media (min-width: 768px) {
+  .sponsor-page .sponsors-heading {
+    font-size: 2.5rem;
+  }
+}
+.sponsor-page .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor-page .icons img {
+  margin: 1rem;
+  width: 150px;
+}
+
+.page1-main {
+  position: relative;
+}
+.page1-main .heading-left-main {
+  font-size: 1.75rem;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .page1-main .heading-left-main {
+    font-size: 2.5rem;
+  }
+}
+.page1-main .btn2 {
+  background-color: #4F9CF9;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page1-main .btn2:hover {
+  background-color: rgba(8, 71, 142, 0.8901960784);
+  border-color: #e1c477;
+}
+.page1-main .btn2 img {
+  margin-left: 0.5rem;
+}
+
+.review-heading {
+  font-size: 1.75rem;
+  color: #08478e;
+}
+@media (min-width: 768px) {
+  .review-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.card2 {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+}
+.card2 div svg {
+  fill: #08478e;
+}
+.card2 .card2-text {
+  font-size: 1rem;
+  color: #08478e;
+  margin-bottom: 1.5rem;
+}
+.card2 .p-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #08478e;
+}
+.card2 .p-subheading {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.card2:hover {
+  background: #4F9CF9;
+}
+.card2:hover .card2-text,
+.card2:hover .p-subheading {
+  color: #fff;
+}
+.card2:hover .q-img {
+  fill: #fff;
+}
+.card2:hover .p-heading {
+  color: #08478e;
+}
+
+.footer {
+  background-color: #08478e;
+  color: #fff;
+  padding: 1rem;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .footer-content .footer-links {
+  margin: 0.5rem 0;
+}
+.footer .footer-content .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.footer .footer-content .footer-links a:hover {
+  color: #f1c40f;
+}
+.footer .footer-content .footer-text {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/*# sourceMappingURL=style2.css.map */

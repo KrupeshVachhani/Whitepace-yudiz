@@ -1,0 +1,65 @@
+// Flexbox Centering Mixin
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Text Centering for Medium Screens Mixin
+%text-center-md {
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+// Box Shadow Mixin
+@mixin box-shadow($shadow-color: rgba(0, 0, 0, 0.15), $blur: 6px, $spread: 0) {
+  box-shadow: 0 4px $blur $spread $shadow-color;
+}
+
+// Button Styling Mixin
+@mixin button-style($bg-color, $text-color, $padding: 0.5rem 1rem, $bg-hover-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: 1px solid $white-color;
+  &:hover {
+    background-color: $bg-hover-color;
+    border-color: $border-color;
+  }
+  @extend %flex-center;
+}
+
+// Responsive Heading Mixin
+@mixin responsive-heading($font-size-desktop: 2.5rem, $font-size-mobile: 1.75rem) {
+  font-size: $font-size-mobile;
+  @media (min-width: 768px) {
+    font-size: $font-size-desktop;
+  }
+}
+
+// Card Styling Mixin
+@mixin card-style($bg-color, $padding: 1.5rem, $border-radius: 0.5rem) {
+  background-color: $bg-color;
+  padding: $padding;
+  border-radius: $border-radius;
+  @include box-shadow;
+}
+
+// Media Query Mixin for Responsive Design
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+}

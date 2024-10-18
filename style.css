@@ -115,9 +115,7 @@ footer ul li a:hover {
 }
 
 .landing-text {
-  /* overflow: hidden; */
   min-height: 80vh;
-  /* min-width: 100vw; */
 }
 
 .page2-main {
@@ -132,7 +130,6 @@ footer ul li a:hover {
 .heading-left-main-3,
 .heading-left-main-4,
 .heading-left-main-5 {
-  /* font-size: 4rem; */
   font-size: 72px;
   z-index: 1;
 }
@@ -499,7 +496,6 @@ a:hover {
   .subheading-top-work-page,
   .subheading-your-data {
     font-size: 18px;
-    /* width: 100%; */
   }
 
   .heading-left-main-4::after {

@@ -1,0 +1,25 @@
+@use "sass:color";
+
+// Color Variables
+$primary-color: #08478e;
+$secondary-color: #6c757d;
+$hover-color: #f1c40f;
+$white-color: #fff;
+$shadow-color: rgba(0, 0, 0, 0.15);
+$card-bg-color: #f8f9fa;
+$button-primary-bg: #4F9CF9;
+$button-bg-hover: #08478ee3;
+$button-primary-text: #ffffff;
+$button-primary-hover-bg: $hover-color;
+$button-secondary-bg: #FFE492;
+$button-secondary-text: #043873;
+$button-secondary-hover-bg: color.scale($hover-color, $lightness: -10%);
+$a1a6a9-color: #a1a6a9; // New color added for hover states
+$border-color: #e1c477;  // New border color added for buttons/cards
+
+// Font and Layout Variables
+$heading-font-size: 2.5rem;
+$subheading-font-size: 1.2rem;
+$btn-padding: 0.5rem 1rem;
+$box-shadow-blur: 6px;
+$box-shadow-spread: 0;

@@ -1,0 +1,264 @@
+@use "sass:color";
+@import "mixin";
+@import "variable";
+
+// Button Styles
+.btn1 {
+  @include button-style(
+    $button-secondary-bg,
+    $primary-color,
+    $btn-padding,
+    $button-secondary-hover-bg
+  );
+
+  &:hover {
+    border: none;
+  }
+}
+
+.btn2 {
+  @include button-style(
+    $button-primary-bg,
+    $white-color,
+    $btn-padding,
+    $button-bg-hover
+  );
+
+  img {
+    margin-left: 0.5rem;
+  }
+}
+
+// Page 2 Main
+.page2-main {
+  min-height: 100vh;
+  position: relative;
+  background-color: $white-color;
+
+  .heading-left-main-5 {
+    @include responsive-heading($heading-font-size);
+  }
+
+  .subheading-left-main-5 {
+    @include responsive-heading($subheading-font-size);
+    color: $primary-color;
+  }
+}
+
+// Plan Page
+.plan-page {
+  @extend %flex-center;
+  flex-direction: column;
+
+  .heading-top-plan-page {
+    @include responsive-heading($heading-font-size);
+    color: $primary-color;
+  }
+
+  .subheading-plan {
+    @include responsive-heading($subheading-font-size);
+    color: $primary-color;
+    margin: 1rem 0;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      @include card-style($card-bg-color);
+
+      &:hover {
+        background: $primary-color;
+      }
+
+      .card-features ul li {
+        margin-bottom: 0.5rem;
+        i {
+          color: $secondary-color;
+        }
+      }
+
+      .plan-btn {
+        @include button-style(
+          $button-primary-bg,
+          $white-color,
+          $btn-padding,
+          $button-bg-hover
+        );
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Work Page
+.work-page {
+  position: relative;
+  padding-top: 2rem;
+  background-color: $primary-color;
+
+  .heading-top-work-page {
+    @include responsive-heading($heading-font-size);
+    color: $white-color;
+  }
+
+  .subheading-top-work-page {
+    @include responsive-heading($subheading-font-size);
+    color: $white-color;
+    padding: 0 2rem;
+    @extend %text-center-md;
+  }
+}
+
+// Your Data Page
+.your-data {
+  padding: 2rem 0;
+
+  .heading-your-data {
+    @include responsive-heading($heading-font-size);
+    color: $primary-color;
+  }
+
+  .subheading-your-data {
+    @include responsive-heading($subheading-font-size);
+    color: $primary-color;
+    margin: 1rem 0;
+  }
+
+  .btn2 {
+    @include button-style(
+      $button-primary-bg,
+      $white-color,
+      $btn-padding,
+      $button-bg-hover
+    );
+
+    img {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// Sponsors Page
+.sponsor-page {
+  padding: 3rem 0;
+  background-color: $white-color;
+
+  .sponsors-heading {
+    @include responsive-heading($heading-font-size);
+    color: $primary-color;
+  }
+
+  .icons {
+    @extend %flex-center;
+
+    img {
+      margin: 1rem;
+      width: 150px;
+    }
+  }
+}
+
+// Favorite Apps Page
+.page1-main {
+  position: relative;
+
+  .heading-left-main {
+    @include responsive-heading($heading-font-size);
+    color: $white-color;
+  }
+
+  .btn2 {
+    @include button-style(
+      $button-primary-bg,
+      $white-color,
+      $btn-padding,
+      $button-bg-hover
+    );
+
+    img {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// Testimonials
+.review-heading {
+  @include responsive-heading($heading-font-size);
+  color: $primary-color;
+}
+
+.card2 {
+  @include card-style($white-color, 2rem);
+
+  div {
+    svg {
+      fill: $primary-color;
+    }
+  }
+
+  .card2-text {
+    font-size: 1rem;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .p-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .p-subheading {
+    font-size: 0.9rem;
+    color: $secondary-color;
+  }
+
+  &:hover {
+    background: $button-primary-bg;
+    .card2-text,
+    .p-subheading {
+      color: $white-color;
+    }
+    .q-img {
+      fill: $white-color;
+    }
+    .p-heading {
+      color: $primary-color;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $primary-color;
+  color: $white-color;
+  padding: 1rem;
+
+  .footer-content {
+    @extend %flex-center;
+    flex-direction: column;
+
+    .footer-links {
+      margin: 0.5rem 0;
+
+      a {
+        color: $white-color;
+        text-decoration: none;
+        margin: 0 0.5rem;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+  }
+}
